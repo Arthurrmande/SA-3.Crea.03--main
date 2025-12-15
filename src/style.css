@@ -7,7 +7,6 @@
   
   --color-white: rgba(250, 250, 238, 1);
   --color-black: rgba(33, 33, 33, 1);
-  
   --color-blue-light: rgba(106, 140, 164, 1); 
   --color-blue : rgba(63, 91, 122, 1);
   --color-red-light: rgba(194, 106, 90, 1);
@@ -22,8 +21,8 @@
 
 body {
   margin: 0;
+  overflow-x: hidden;
 }
-  
 
 /* Page Accueil */
 .accueil {
@@ -38,7 +37,6 @@ body {
   font-family: var(--font-display);
   margin: 0;
 }
-
 
 /* Page Presentation */
 .presentation {
@@ -76,7 +74,7 @@ body {
   max-width: 480px;
 }
 
-/* QUEUE DE BULLE (BORD NOIR) */
+/* QUEUE DE BULLE */
 .presentation__fig__bulle::before {
   content: "";
   position: absolute;
@@ -89,7 +87,6 @@ body {
   border-right: 22px solid var(--color-black);
 }
 
-/* QUEUE DE BULLE (INTÉRIEUR VERT) */
 .presentation__fig__bulle::after {
   content: "";
   position: absolute;
@@ -102,94 +99,116 @@ body {
   border-right: 20px solid var(--color-green);
 }
 
+/* --- SCROLL HORIZONTAL STRUCTURE --- */
 
-/* Page info train */
+.horizontal-scroll-container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
 
-.info__train {
+.horizontal-wrapper {
+  display: flex;
+  width: 300%;
+  height: 100%;
+  will-change: transform;
+}
+
+/* Le panneau devient le référent pour le positionnement absolu */
+.panel {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* Important pour couper ce qui dépasse */
+}
+
+/* --- POSITIONNEMENT DU TEXTE ET DE L'ANIMATION --- */
+
+/* Style commun pour tous les blocs de texte dans le scroll */
+.box-text {
+  position: absolute;
+  top: 15%; /* Place le texte à 15% du haut de l'écran, ajuste si besoin */
+  left: 0;
+  width: 100%; /* Prend toute la largeur pour pouvoir centrer le texte */
+  z-index: 10; /* Met le texte au premier plan, par-dessus l'animation */
+  text-align: center;
+  padding: 0 2rem; /* Un peu de marge sur les côtés pour les petits écrans */
+  box-sizing: border-box; /* Pour que le padding ne casse pas la largeur */
+}
+
+/* Style commun pour tous les blocs d'animation dans le scroll */
+.box-anim {
+  position: absolute;
+  bottom: 0; /* Colle l'animation tout en bas */
+  left: 0;
+  width: 100%; /* Prend toute la largeur */
+  height: auto;
+  z-index: 1; /* Met l'animation en arrière-plan */
+  
+  /* Astuces pour bien caler le contenu en bas et éviter les interactions */
+  display: flex;
+  align-items: flex-end; 
+  pointer-events: none; /* Permet de cliquer/sélectionner le texte à travers l'animation */
+}
+
+/* Force le composant Lottie à remplir son conteneur sans espace en dessous */
+dotlottie-wc {
+  width: 100% !important;
+  height: auto !important;
+  display: block;
+  vertical-align: bottom;
+}
+
+
+/* --- STYLES SPÉCIFIQUES AU TEXTE ET COULEURS DE FOND --- */
+
+/* Train */
+.info__train { 
   background-color: var(--color-yellow);
-  padding-top: 6.3rem;
 }
 
-.info__train__text{
-  font-family: var(--font-display);
-  font-size: 7rem;
-  color: var(--color-black);
-  text-align: center;
-  margin: 0;
-  padding: 0 6rem;
-}
-
-.info__train__desc{
+.info__train__desc {
   font-family: var(--font-sans);
   font-size: 2.5rem;
   color: var(--color-black);
-  text-align: center;
   margin: 0;
 }
 
-.info__train span{
-  font-family: var(--font-display);
+.info__train span { 
+  font-family: var(--font-display); 
   font-weight: bold;
+}  
+
+/* Voiture */
+.info__voiture { 
+  background-color: var(--color-purple); 
 }
 
-
-
-/* Page info voiture */
-
-.info__voiture {
-  background-color: var(--color-purple);
-  padding-top: 8rem;
-}
-
-.info__voiture__text{
-  font-family: var(--font-display);
-  font-size: 7rem;
-  color: var(--color-black);
-  text-align: center;
-  margin: 0;
-  padding: 0 10rem;
-}
-
-.info__voiture__desc{
+.info__voiture__desc {
   font-family: var(--font-sans);
   font-size: 2.5rem;
   color: var(--color-black);
-  text-align: center;
   margin: 0;
 }
 
-.info__voiture span{
-  font-family: var(--font-display);
-  font-weight: bold;
+.info__voiture span { 
+  font-family: var(--font-display); 
+  font-weight: bold; 
 }
 
-
-/* Page info avion */
-
-.info__avion {
-  background-color: var(--color-blue);
-  padding-top: 9rem;
+/* Avion */
+.info__avion { 
+  background-color: var(--color-blue); 
 }
 
-.info__avion__text{
-  font-family: var(--font-display);
-  font-size: 7rem;
-  color: var(--color-black);
-  text-align: center;
-  margin: 0;
-  padding: 0 10rem;
-}
-
-.info__avion__desc{
+.info__avion__desc {
   font-family: var(--font-sans);
   font-size: 2.5rem;
   color: var(--color-black);
-  text-align: center;
   margin: 0;
-  padding-bottom: 5rem;
 }
 
-.info__avion span{
-  font-family: var(--font-display);
-  font-weight: bold;
+.info__avion span { 
+  font-family: var(--font-display); 
+  font-weight: bold; 
 }
