@@ -117,8 +117,7 @@ body {
 /* Le panneau devient le référent pour le positionnement absolu */
 .panel {
   position: relative;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
   overflow: hidden; /* Important pour couper ce qui dépasse */
 }
 
@@ -177,6 +176,7 @@ dotlottie-wc {
 .info__train span { 
   font-family: var(--font-display); 
   font-weight: bold;
+  font-style: italic;
 }  
 
 /* Voiture */
@@ -194,6 +194,7 @@ dotlottie-wc {
 .info__voiture span { 
   font-family: var(--font-display); 
   font-weight: bold; 
+  font-style: italic;
 }
 
 /* Avion */
@@ -211,4 +212,381 @@ dotlottie-wc {
 .info__avion span { 
   font-family: var(--font-display); 
   font-weight: bold; 
+  font-style: italic;
 }
+
+
+/* Page info tourisme +180% */
+
+.info__touriste {
+  background-color: var(--color-red);
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 3rem;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* CONTENEUR GAUCHE (Bulle + Mascotte) */
+.info__touriste__fig {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+
+  margin-left: 0;
+}
+
+.info__touriste__img {
+  width: 180px;
+  height: auto;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.info__touriste__bulle {
+  position: relative;
+  width: 500px;
+  padding: 2rem;
+  border: 2px solid var(--color-black);
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+.info__touriste__desc {
+  font-family: var(--font-sans);
+  font-size: 1.9rem;
+  color: var(--color-black);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.info__touriste__desc span {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* --- QUEUE DE BULLE --- */
+
+.info__touriste__bulle::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  bottom: -22px;
+  width: 0;
+  height: 0;
+
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 22px solid var(--color-black); 
+  border-bottom: none;
+}
+
+.info__touriste__bulle::after {
+  content: "";
+  position: absolute;
+  left: 42px;
+  bottom: -19px;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 20px solid var(--color-red);
+  border-bottom: none;
+}
+
+
+
+
+/* Page info airbus */
+
+.info__airbus {
+  background-color: var(--color-blue-light);
+  display: flex;
+  flex-direction: row-reverse;
+
+  justify-content: center;
+  align-items: center;
+
+  gap: 3rem;
+  width: 100vw;
+  height: 100vh;
+}
+
+
+/* CONTENEUR GAUCHE (Bulle + Mascotte) */
+.info__airbus__fig {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+
+  margin-left: 0;
+}
+
+.info__airbus__img {
+  width: 180px;
+  height: auto;
+  margin-top: 1rem;
+  margin-left: 25rem;
+
+}
+
+.info__airbus__bulle {
+  position: relative;
+  width: 500px;
+  padding: 2rem;
+  border: 2px solid var(--color-black);
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+.info__airbus__desc {
+  font-family: var(--font-sans);
+  font-size: 1.9rem;
+  color: var(--color-black);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.info__airbus__desc span {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* --- QUEUE DE BULLE (Côté Droit) --- */
+
+.info__airbus__bulle::before {
+  content: "";
+  position: absolute;
+  right: 150px; 
+  left: auto; 
+  
+  bottom: -22px;
+  width: 0;
+  height: 0;
+
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 22px solid var(--color-black); 
+  border-bottom: none;
+}
+
+.info__airbus__bulle::after {
+  content: "";
+  position: absolute;
+  right: 152px; 
+  left: auto; 
+  
+  bottom: -19px;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  
+  border-top: 20px solid var(--color-blue-light); 
+  border-bottom: none;
+}
+
+
+
+
+/* Page info locaux */
+
+.info__locaux {
+  background-color: var(--color-pink);
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+/* CONTENEUR GAUCHE (Bulle + Mascotte) */
+.info__locaux__fig {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+
+  margin-left: 5rem;
+}
+
+.info__locaux__img {
+  width: 180px;
+  height: auto;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.info__locaux__bulle {
+  position: relative;
+  width: 500px;
+  padding: 2rem;
+  border: 2px solid var(--color-black);
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+.info__locaux__desc {
+  font-family: var(--font-sans);
+  font-size: 1.9rem;
+  color: var(--color-black);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.info__locaux__desc span {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* --- QUEUE DE BULLE --- */
+
+.info__locaux__bulle::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  bottom: -22px;
+  width: 0;
+  height: 0;
+
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 22px solid var(--color-black); 
+  border-bottom: none;
+}
+
+.info__locaux__bulle::after {
+  content: "";
+  position: absolute;
+  left: 42px;
+  bottom: -19px;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 20px solid var(--color-pink);
+  border-bottom: none;
+}
+
+.population-section {
+  width: 100%;
+  height: 100vh; /* Prend tout l'écran */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-pink); /* Le fond rose de ton image */
+  overflow: hidden; /* Important pour que les mecs n'apparaissent pas avant de tomber */
+}
+
+.population-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 colonnes */
+  gap: 15px; /* Espace entre les bonshommes */
+  width: fit-content;
+}
+
+/* Ajoute ceci dans style.css */
+.mec svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+
+
+
+/* Page info ges */
+
+.info__ges {
+  background-color: var(--color-yellow-light);
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+}
+
+/* CONTENEUR GAUCHE (Bulle + Mascotte) */
+.info__ges__fig {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+
+  margin-left: 5rem;
+}
+
+.info__ges__img {
+  width: 180px;
+  height: auto;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.info__ges__bulle {
+  position: relative;
+  width: 500px;
+  padding: 2rem;
+  border: 2px solid var(--color-black);
+  border-radius: 12px;
+  background-color: transparent;
+}
+
+.info__ges__desc {
+  font-family: var(--font-sans);
+  font-size: 1.9rem;
+  color: var(--color-black);
+  margin: 0;
+  line-height: 1.3;
+}
+
+.info__ges__desc span {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-style: italic;
+}
+
+/* --- QUEUE DE BULLE --- */
+
+.info__ges__bulle::before {
+  content: "";
+  position: absolute;
+  left: 40px;
+  bottom: -22px;
+  width: 0;
+  height: 0;
+
+  border-left: 18px solid transparent;
+  border-right: 18px solid transparent;
+  border-top: 22px solid var(--color-black); 
+  border-bottom: none;
+}
+
+.info__ges__bulle::after {
+  content: "";
+  position: absolute;
+  left: 42px;
+  bottom: -19px;
+  width: 0;
+  height: 0;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+  border-top: 20px solid var(--color-yellow-light);
+  border-bottom: none;
+}
+
