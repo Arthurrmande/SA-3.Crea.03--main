@@ -790,6 +790,11 @@ dotlottie-wc {
   height: 100vh;
 }
 
+.anim__feu{
+  width: 400px;
+  height: 400px;
+}
+
 /* CONTENEUR GAUCHE (Bulle + Mascotte) */
 .info__feu__fig {
   display: flex;
@@ -1115,7 +1120,6 @@ dotlottie-wc {
 .info__billet {
   background-color: var(--color-yellow-light);
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
@@ -1123,12 +1127,9 @@ dotlottie-wc {
   height: 100vh;
 }
 
-.billet1{
-
-}
-
-.billet2{
-
+.anim__billets{
+  width: 1000px;
+  height: 1000px;
 }
 
 
@@ -1143,6 +1144,11 @@ dotlottie-wc {
 
   width: 100vw;
   height: 100vh;
+}
+
+.anim__france__eco{
+  width: 400px;
+  height: 400px;
 }
 
 /* CONTENEUR GAUCHE (Bulle + Mascotte) */
@@ -1229,6 +1235,11 @@ dotlottie-wc {
   gap: 3rem;
   width: 100vw;
   height: 100vh;
+}
+
+.anim__touriste_etranger{
+  width: 400px;
+  height: 400px;
 }
 
 /* CONTENEUR GAUCHE (Bulle + Mascotte) */
