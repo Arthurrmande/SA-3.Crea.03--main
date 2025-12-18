@@ -428,6 +428,10 @@ dotlottie-wc {
   height: 100vh;
 }
 
+.info__airbus__anim{
+  overflow: visible;
+}
+
 /* CONTENEUR GAUCHE (Bulle + Mascotte) */
 .info__locaux__fig {
   display: flex;
@@ -809,7 +813,6 @@ dotlottie-wc {
   justify-content: center;
   align-items: center;
 
-  gap: 3rem;
   width: 100vw;
   height: 100vh;
 }
@@ -826,7 +829,7 @@ dotlottie-wc {
   align-items: flex-start;
   position: relative;
 
-  margin-left: 0;
+  /* margin-left: 0; */
 }
 
 .info__feu__img {

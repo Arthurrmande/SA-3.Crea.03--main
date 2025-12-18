@@ -25,7 +25,7 @@ const tlGraphique = gsap.timeline({
     trigger: ".info__touriste",
     start: "top 60%",
     toggleActions: "play none restart reverse",
-    markers: true,
+    // markers: true,
   }
 });
 
@@ -263,3 +263,6 @@ tlGraphique2
     duration: 2,
     ease: "power2.inOut"
   }, "-=1.5"); // Commence un peu avant la fin des chiffres
+
+
+
