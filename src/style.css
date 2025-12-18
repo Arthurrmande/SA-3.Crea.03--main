@@ -58,17 +58,17 @@ body {
 }
 
 .presentation__fig__img {
-  width: 260px;
+  width: 16.25rem;
   height: auto;
 }
 
 .presentation__fig__bulle {
   position: relative;
-  width: 500px;
-  min-height: 300px;
+  width: 31.25rem;
+  min-height: 18.75rem;
   padding: 2rem;
-  border: 2px solid var(--color-black);
-  border-radius: 24px;
+  border: 0.125rem solid var(--color-black);
+  border-radius: 1.5rem;
 
   display: flex;
   justify-content: center;
@@ -77,7 +77,7 @@ body {
 
 .presentation__fig__desc {
   font-family: var(--font-sans);
-  font-size: 2.5rem;
+  font-size: 40px;
   color: var(--color-black);
   margin: 0;
 }
@@ -86,25 +86,25 @@ body {
 .presentation__fig__bulle::before {
   content: "";
   position: absolute;
-  left: -22px;
-  bottom: 40px;
+  left: -1.375rem;
+  bottom: 2.5rem;
   width: 0;
   height: 0;
-  border-top: 18px solid transparent;
-  border-bottom: 18px solid transparent;
-  border-right: 22px solid var(--color-black);
+  border-top: 1.125rem solid transparent;
+  border-bottom: 1.125rem solid transparent;
+  border-right: 1.375rem solid var(--color-black);
 }
 
 .presentation__fig__bulle::after {
   content: "";
   position: absolute;
-  left: -19px;
-  bottom: 40px;
+  left: -1.1875rem;
+  bottom: 2.5rem;
   width: 0;
   height: 0;
-  border-top: 16px solid transparent;
-  border-bottom: 16px solid transparent;
-  border-right: 20px solid var(--color-green);
+  border-top: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
+  border-right: 1.25rem solid var(--color-green);
 }
 
 
@@ -130,33 +130,27 @@ body {
   overflow: hidden; /* Important pour couper ce qui dépasse */
 }
 
-/* --- POSITIONNEMENT DU TEXTE ET DE L'ANIMATION --- */
-
-/* Style commun pour tous les blocs de texte dans le scroll */
 .box-text {
   position: absolute;
-  top: 15%; /* Place le texte à 15% du haut de l'écran, ajuste si besoin */
+  top: 15%;
   left: 0;
-  width: 100%; /* Prend toute la largeur pour pouvoir centrer le texte */
-  z-index: 10; /* Met le texte au premier plan, par-dessus l'animation */
+  width: 100%;
+  z-index: 10;
   text-align: center;
-  padding: 0 2rem; /* Un peu de marge sur les côtés pour les petits écrans */
-  box-sizing: border-box; /* Pour que le padding ne casse pas la largeur */
+  padding: 0 2rem;
+  box-sizing: border-box;
 }
 
-/* Style commun pour tous les blocs d'animation dans le scroll */
 .box-anim {
   position: absolute;
-  bottom: 0; /* Colle l'animation tout en bas */
+  bottom: 0; 
   left: 0;
-  width: 100%; /* Prend toute la largeur */
+  width: 100%; 
   height: auto;
-  z-index: 1; /* Met l'animation en arrière-plan */
+  z-index: 1; 
   
-  /* Astuces pour bien caler le contenu en bas et éviter les interactions */
   display: flex;
   align-items: flex-end; 
-  pointer-events: none; /* Permet de cliquer/sélectionner le texte à travers l'animation */
 }
 
 /* Force le composant Lottie à remplir son conteneur sans espace en dessous */
@@ -253,7 +247,7 @@ dotlottie-wc {
 }
 
 .info__touriste__img {
-  width: 180px;
+  width: 11.25rem;
   height: auto;
   margin-top: 1rem;
   margin-left: 2rem;
@@ -261,10 +255,10 @@ dotlottie-wc {
 
 .info__touriste__bulle {
   position: relative;
-  width: 500px;
+  width: 31.25rem;
   padding: 2rem;
-  border: 2px solid var(--color-black);
-  border-radius: 12px;
+  border: 0.125rem solid var(--color-black);
+  border-radius: 0.75rem;
   background-color: transparent;
 }
 
@@ -287,27 +281,27 @@ dotlottie-wc {
 .info__touriste__bulle::before {
   content: "";
   position: absolute;
-  left: 40px;
-  bottom: -22px;
+  left: 2.5rem;
+  bottom: -1.375rem;
   width: 0;
   height: 0;
 
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-top: 22px solid var(--color-black); 
+  border-left: 1.125rem solid transparent;
+  border-right: 1.125rem solid transparent;
+  border-top: 1.375rem solid var(--color-black); 
   border-bottom: none;
 }
 
 .info__touriste__bulle::after {
   content: "";
   position: absolute;
-  left: 42px;
-  bottom: -19px;
+  left: 2.625rem;
+  bottom: -1.1875rem;
   width: 0;
   height: 0;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
-  border-top: 20px solid var(--color-red);
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.25rem solid var(--color-red);
   border-bottom: none;
 }
 
@@ -344,7 +338,7 @@ dotlottie-wc {
 }
 
 .info__airbus__img {
-  width: 180px;
+  width: 11.25rem;
   height: auto;
   margin-top: 1rem;
   margin-left: 25rem;
@@ -353,10 +347,10 @@ dotlottie-wc {
 
 .info__airbus__bulle {
   position: relative;
-  width: 500px;
+  width: 31.25rem;
   padding: 2rem;
-  border: 2px solid var(--color-black);
-  border-radius: 12px;
+  border: 0.125rem solid var(--color-black);
+  border-radius: 0.75rem;
   background-color: transparent;
 }
 
@@ -379,32 +373,32 @@ dotlottie-wc {
 .info__airbus__bulle::before {
   content: "";
   position: absolute;
-  right: 150px; 
+  right: 9.375rem; 
   left: auto; 
   
-  bottom: -22px;
+  bottom: -1.375rem;
   width: 0;
   height: 0;
 
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-top: 22px solid var(--color-black); 
+  border-left: 1.125rem solid transparent;
+  border-right: 1.125rem solid transparent;
+  border-top: 1.375rem solid var(--color-black); 
   border-bottom: none;
 }
 
 .info__airbus__bulle::after {
   content: "";
   position: absolute;
-  right: 152px; 
+  right: 9.5rem; 
   left: auto; 
   
-  bottom: -19px;
+  bottom: -1.1875rem;
   width: 0;
   height: 0;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
   
-  border-top: 20px solid var(--color-blue-light); 
+  border-top: 1.25rem solid var(--color-blue-light); 
   border-bottom: none;
 }
 
@@ -443,7 +437,7 @@ dotlottie-wc {
 }
 
 .info__locaux__img {
-  width: 180px;
+  width: 11.25rem;
   height: auto;
   margin-top: 1rem;
   margin-left: 2rem;
@@ -451,10 +445,10 @@ dotlottie-wc {
 
 .info__locaux__bulle {
   position: relative;
-  width: 500px;
+  width: 31.25rem;
   padding: 2rem;
-  border: 2px solid var(--color-black);
-  border-radius: 12px;
+  border: .125rem solid var(--color-black);
+  border-radius: .75rem;
   background-color: transparent;
 }
 
@@ -477,27 +471,27 @@ dotlottie-wc {
 .info__locaux__bulle::before {
   content: "";
   position: absolute;
-  left: 40px;
-  bottom: -22px;
+  left: 2.5rem;
+  bottom: -1.375rem;
   width: 0;
   height: 0;
 
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-top: 22px solid var(--color-black); 
+  border-left: 1.125rem solid transparent;
+  border-right: 1.125rem solid transparent;
+  border-top: 1.375rem solid var(--color-black); 
   border-bottom: none;
 }
 
 .info__locaux__bulle::after {
   content: "";
   position: absolute;
-  left: 42px;
-  bottom: -19px;
+  left: 2.625rem;
+  bottom: -1.1875rem;
   width: 0;
   height: 0;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
-  border-top: 20px solid var(--color-pink);
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.25rem solid var(--color-pink);
   border-bottom: none;
 }
 
@@ -514,7 +508,7 @@ dotlottie-wc {
 .population-grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr); /* 5 colonnes */
-  gap: 15px; /* Espace entre les bonshommes */
+  gap: 0.9375rem;
   width: fit-content;
 }
 
@@ -556,7 +550,7 @@ dotlottie-wc {
 }
 
 .info__ges__img {
-  width: 180px;
+  width: 11.25rem;
   height: auto;
   margin-top: 1rem;
   margin-left: 2rem;
@@ -564,10 +558,10 @@ dotlottie-wc {
 
 .info__ges__bulle {
   position: relative;
-  width: 500px;
+  width: 31.25rem;
   padding: 2rem;
-  border: 2px solid var(--color-black);
-  border-radius: 12px;
+  border: .125rem solid var(--color-black);
+  border-radius: .75rem;
   background-color: transparent;
 }
 
@@ -590,27 +584,27 @@ dotlottie-wc {
 .info__ges__bulle::before {
   content: "";
   position: absolute;
-  left: 40px;
-  bottom: -22px;
+  left: 2.5rem;
+  bottom: -1.375rem;
   width: 0;
   height: 0;
 
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-top: 22px solid var(--color-black); 
+  border-left: 1.125rem solid transparent;
+  border-right: 1.125rem solid transparent;
+  border-top: 1.375rem solid var(--color-black); 
   border-bottom: none;
 }
 
 .info__ges__bulle::after {
   content: "";
   position: absolute;
-  left: 42px;
-  bottom: -19px;
+  left: 2.625rem;
+  bottom: -1.1875rem;
   width: 0;
   height: 0;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
-  border-top: 20px solid var(--color-yellow-light);
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.25rem solid var(--color-yellow-light);
   border-bottom: none;
 }
 
@@ -646,7 +640,7 @@ dotlottie-wc {
 }
 
 .info__ges__avion__img {
-  width: 180px;
+  width: 11.25rem;
   height: auto;
   margin-top: 1rem;
   margin-left: 25rem;
@@ -655,10 +649,10 @@ dotlottie-wc {
 
 .info__ges__avion__bulle {
   position: relative;
-  width: 500px;
+  width: 31.25rem;
   padding: 2rem;
-  border: 2px solid var(--color-black);
-  border-radius: 12px;
+  border: .125rem solid var(--color-black);
+  border-radius: .75rem;
   background-color: transparent;
 }
 
@@ -681,32 +675,32 @@ dotlottie-wc {
 .info__ges__avion__bulle::before {
   content: "";
   position: absolute;
-  right: 150px; 
+  right: 9.375rem; 
   left: auto; 
   
-  bottom: -22px;
+  bottom: -1.375rem;
   width: 0;
   height: 0;
 
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-top: 22px solid var(--color-black); 
+  border-left: 1.125rem solid transparent;
+  border-right: 1.125rem solid transparent;
+  border-top: 1.375rem solid var(--color-black); 
   border-bottom: none;
 }
 
 .info__ges__avion__bulle::after {
   content: "";
   position: absolute;
-  right: 152px; 
+  right: 9.5rem; 
   left: auto; 
   
-  bottom: -19px;
+  bottom: -1.1875rem;
   width: 0;
   height: 0;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
   
-  border-top: 20px solid var(--color-purple); 
+  border-top: 1.25rem solid var(--color-purple); 
   border-bottom: none;
 }
 
@@ -740,7 +734,7 @@ dotlottie-wc {
 }
 
 .info__ile__img {
-  width: 180px;
+  width: 11.25rem;
   height: auto;
   margin-top: 1rem;
   margin-left: 1rem;
@@ -748,10 +742,10 @@ dotlottie-wc {
 
 .info__ile__bulle {
   position: relative;
-  width: 500px;
+  width: 31.25rem;
   padding: 2rem;
-  border: 2px solid var(--color-black);
-  border-radius: 12px;
+  border: .125rem solid var(--color-black);
+  border-radius: .75rem;
   background-color: transparent;
 }
 
@@ -774,27 +768,27 @@ dotlottie-wc {
 .info__ile__bulle::before {
   content: "";
   position: absolute;
-  left: 40px;
-  bottom: -22px;
+  left: 2.5rem;
+  bottom: -1.375rem;
   width: 0;
   height: 0;
 
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-top: 22px solid var(--color-black); 
+  border-left: 1.125rem solid transparent;
+  border-right: 1.125rem solid transparent;
+  border-top: 1.375rem solid var(--color-black); 
   border-bottom: none;
 }
 
 .info__ile__bulle::after {
   content: "";
   position: absolute;
-  left: 42px;
-  bottom: -19px;
+  left: 2.625rem;
+  bottom: -1.1875rem;
   width: 0;
   height: 0;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
-  border-top: 20px solid var(--color-green);
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.25rem solid var(--color-green);
   border-bottom: none;
 }
 
@@ -818,8 +812,8 @@ dotlottie-wc {
 }
 
 .anim__feu{
-  width: 600px;
-  height: 600px;
+  width: 37.5rem;
+  height: 37.5rem;
 }
 
 /* CONTENEUR GAUCHE (Bulle + Mascotte) */
@@ -833,7 +827,7 @@ dotlottie-wc {
 }
 
 .info__feu__img {
-  width: 180px;
+  width: 11.25rem;
   height: auto;
   margin-top: 1rem;
   margin-left: 1rem;
@@ -841,10 +835,10 @@ dotlottie-wc {
 
 .info__feu__bulle {
   position: relative;
-  width: 500px;
+  width: 31.25rem;
   padding: 2rem;
-  border: 2px solid var(--color-black);
-  border-radius: 12px;
+  border: .125rem solid var(--color-black);
+  border-radius: .75rem;
   background-color: transparent;
 }
 
@@ -867,27 +861,27 @@ dotlottie-wc {
 .info__feu__bulle::before {
   content: "";
   position: absolute;
-  left: 40px;
-  bottom: -22px;
+  left: 2.5rem;
+  bottom: -1.375rem;
   width: 0;
   height: 0;
 
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-top: 22px solid var(--color-black); 
+  border-left: 1.125rem solid transparent;
+  border-right: 1.125rem solid transparent;
+  border-top: 1.375rem solid var(--color-black); 
   border-bottom: none;
 }
 
 .info__feu__bulle::after {
   content: "";
   position: absolute;
-  left: 42px;
-  bottom: -19px;
+  left: 2.625rem;
+  bottom: -1.1875rem;
   width: 0;
   height: 0;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
-  border-top: 20px solid var(--color-blue-light);
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.25rem solid var(--color-blue-light);
   border-bottom: none;
 }
 
@@ -922,7 +916,7 @@ dotlottie-wc {
 }
 
 .info__rechauffement__img {
-  width: 180px;
+  width: 11.25rem;
   height: auto;
   margin-top: 1rem;
   margin-left: 2rem;
@@ -930,10 +924,10 @@ dotlottie-wc {
 
 .info__rechauffement__bulle {
   position: relative;
-  width: 500px;
+  width: 31.25rem;
   padding: 2rem;
-  border: 2px solid var(--color-black);
-  border-radius: 12px;
+  border: .125rem solid var(--color-black);
+  border-radius: .75rem;
   background-color: transparent;
 }
 
@@ -956,27 +950,27 @@ dotlottie-wc {
 .info__rechauffement__bulle::before {
   content: "";
   position: absolute;
-  left: 40px;
-  bottom: -22px;
+  left: 2.5rem;
+  bottom: -1.375rem;
   width: 0;
   height: 0;
 
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-top: 22px solid var(--color-black); 
+  border-left: 1.125rem solid transparent;
+  border-right: 1.125rem solid transparent;
+  border-top: 1.375rem solid var(--color-black); 
   border-bottom: none;
 }
 
 .info__rechauffement__bulle::after {
   content: "";
   position: absolute;
-  left: 42px;
-  bottom: -19px;
+  left: 2.625rem;
+  bottom: -1.1875rem;
   width: 0;
   height: 0;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
-  border-top: 20px solid var(--color-pink);
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.25rem solid var(--color-pink);
   border-bottom: none;
 }
 
@@ -1012,7 +1006,7 @@ dotlottie-wc {
 }
 
 .info__pandemie__img {
-  width: 180px;
+  width: 11.25rem;
   height: auto;
   margin-top: 1rem;
   margin-left: 25rem;
@@ -1021,10 +1015,10 @@ dotlottie-wc {
 
 .info__pandemie__bulle {
   position: relative;
-  width: 500px;
+  width: 31.25rem;
   padding: 2rem;
-  border: 2px solid var(--color-black);
-  border-radius: 12px;
+  border: .125rem solid var(--color-black);
+  border-radius: .75rem;
   background-color: transparent;
 }
 
@@ -1047,32 +1041,32 @@ dotlottie-wc {
 .info__pandemie__bulle::before {
   content: "";
   position: absolute;
-  right: 150px; 
+  right: 9.375rem; 
   left: auto; 
   
-  bottom: -22px;
+  bottom: -1.375rem;
   width: 0;
   height: 0;
 
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-top: 22px solid var(--color-black); 
+  border-left: 1.125rem solid transparent;
+  border-right: 1.125rem solid transparent;
+  border-top: 1.375rem solid var(--color-black); 
   border-bottom: none;
 }
 
 .info__pandemie__bulle::after {
   content: "";
   position: absolute;
-  right: 152px; 
+  right: 9.5rem; 
   left: auto; 
   
-  bottom: -19px;
+  bottom: -1.1875rem;
   width: 0;
   height: 0;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
   
-  border-top: 20px solid var(--color-red-light); 
+  border-top: 1.25rem solid var(--color-red-light); 
   border-bottom: none;
 }
 
@@ -1096,17 +1090,17 @@ dotlottie-wc {
 }
 
 .presentation__eco__fig__img {
-  width: 260px;
+  width: 16.25rem;
   height: auto;
 }
 
 .presentation__eco__fig__bulle {
   position: relative;
-  width: 500px;
-  min-height: 300px;
+  width: 31.25rem;
+  min-height: 18.75rem;
   padding: 2rem;
-  border: 2px solid var(--color-black);
-  border-radius: 24px;
+  border: .125rem solid var(--color-black);
+  border-radius: 1.5rem;
 
   display: flex;
   justify-content: center;
@@ -1130,25 +1124,25 @@ dotlottie-wc {
 .presentation__eco__fig__bulle::before {
   content: "";
   position: absolute;
-  left: -22px;
-  bottom: 40px;
+  left: -1.375rem;
+  bottom: 2.5rem;
   width: 0;
   height: 0;
-  border-top: 18px solid transparent;
-  border-bottom: 18px solid transparent;
-  border-right: 22px solid var(--color-black);
+  border-top: 1.125rem solid transparent;
+  border-bottom: 1.125rem solid transparent;
+  border-right: 1.375rem solid var(--color-black);
 }
 
 .presentation__eco__fig__bulle::after {
   content: "";
   position: absolute;
-  left: -19px;
-  bottom: 40px;
+  left: -1.1875rem;
+  bottom: 2.5rem;
   width: 0;
   height: 0;
-  border-top: 16px solid transparent;
-  border-bottom: 16px solid transparent;
-  border-right: 20px solid var(--color-green-light);
+  border-top: 1rem solid transparent;
+  border-bottom: 1rem solid transparent;
+  border-right: 1.25rem solid var(--color-green-light);
 }
 
 
@@ -1165,8 +1159,8 @@ dotlottie-wc {
 }
 
 .anim__billets{
-  width: 800px;
-  height: 800px;
+  width: 50rem;
+  height: 50rem;
 }
 
 
@@ -1188,8 +1182,8 @@ dotlottie-wc {
 }
 
 .anim__france__eco{
-  width: 400px;
-  height: 400px;
+  width: 25rem;
+  height: 25rem;
 }
 
 /* CONTENEUR GAUCHE (Bulle + Mascotte) */
@@ -1204,7 +1198,7 @@ dotlottie-wc {
 }
 
 .info__france__img {
-  width: 180px;
+  width: 11.25rem;
   height: auto;
   margin-top: 1rem;
   margin-left: 2rem;
@@ -1212,10 +1206,10 @@ dotlottie-wc {
 
 .info__france__bulle {
   position: relative;
-  width: 500px;
+  width: 31.25rem;
   padding: 2rem;
-  border: 2px solid var(--color-black);
-  border-radius: 12px;
+  border: .125rem solid var(--color-black);
+  border-radius: .75rem;
   background-color: transparent;
 }
 
@@ -1238,27 +1232,27 @@ dotlottie-wc {
 .info__france__bulle::before {
   content: "";
   position: absolute;
-  left: 40px;
-  bottom: -22px;
+  left: 2.5rem;
+  bottom: -1.375rem;
   width: 0;
   height: 0;
 
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-top: 22px solid var(--color-black); 
+  border-left: 1.125rem solid transparent;
+  border-right: 1.125rem solid transparent;
+  border-top: 1.375rem solid var(--color-black); 
   border-bottom: none;
 }
 
 .info__france__bulle::after {
   content: "";
   position: absolute;
-  left: 42px;
-  bottom: -19px;
+  left: 2.625rem;
+  bottom: -1.1875rem;
   width: 0;
   height: 0;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
-  border-top: 20px solid var(--color-blue-light);
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
+  border-top: 1.25rem solid var(--color-blue-light);
   border-bottom: none;
 }
 
@@ -1283,8 +1277,8 @@ dotlottie-wc {
 }
 
 .anim__touriste_etranger{
-  width: 400px;
-  height: 400px;
+  width: 25rem;
+  height: 25rem;
 }
 
 /* CONTENEUR GAUCHE (Bulle + Mascotte) */
@@ -1298,7 +1292,7 @@ dotlottie-wc {
 }
 
 .info__touriste_etranger__img {
-  width: 180px;
+  width: 11.25rem;
   height: auto;
   margin-top: 1rem;
   margin-left: 25rem;
@@ -1307,10 +1301,10 @@ dotlottie-wc {
 
 .info__touriste_etranger__bulle {
   position: relative;
-  width: 500px;
+  width: 31.25rem;
   padding: 2rem;
-  border: 2px solid var(--color-black);
-  border-radius: 12px;
+  border: .125rem solid var(--color-black);
+  border-radius: .75rem;
   background-color: transparent;
 }
 
@@ -1333,32 +1327,32 @@ dotlottie-wc {
 .info__touriste_etranger__bulle::before {
   content: "";
   position: absolute;
-  right: 150px; 
+  right: 9.375rem; 
   left: auto; 
   
-  bottom: -22px;
+  bottom: -1.375rem;
   width: 0;
   height: 0;
 
-  border-left: 18px solid transparent;
-  border-right: 18px solid transparent;
-  border-top: 22px solid var(--color-black); 
+  border-left: 1.125rem solid transparent;
+  border-right: 1.125rem solid transparent;
+  border-top: 1.375rem solid var(--color-black); 
   border-bottom: none;
 }
 
 .info__touriste_etranger__bulle::after {
   content: "";
   position: absolute;
-  right: 152px; 
+  right: 9.5rem; 
   left: auto; 
   
-  bottom: -19px;
+  bottom: -1.1875rem;
   width: 0;
   height: 0;
-  border-left: 16px solid transparent;
-  border-right: 16px solid transparent;
+  border-left: 1rem solid transparent;
+  border-right: 1rem solid transparent;
   
-  border-top: 20px solid var(--color-purple); 
+  border-top: 1.25rem solid var(--color-purple); 
   border-bottom: none;
 }
 
