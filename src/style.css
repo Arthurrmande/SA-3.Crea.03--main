@@ -501,18 +501,18 @@ dotlottie-wc {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--color-pink); /* Le fond rose de ton image */
-  overflow: hidden; /* Important pour que les mecs n'apparaissent pas avant de tomber */
+  background-color: var(--color-pink); 
+  overflow: hidden; 
 }
 
 .population-grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr); /* 5 colonnes */
+  grid-template-columns: repeat(5, 1fr);
   gap: 0.9375rem;
   width: fit-content;
 }
 
-/* Ajoute ceci dans style.css */
+
 .mec svg {
   width: 100%;
   height: 100%;
@@ -1120,7 +1120,7 @@ dotlottie-wc {
   font-style: italic;
 }
 
-/* QUEUE DE BULLE */
+
 .presentation__eco__fig__bulle::before {
   content: "";
   position: absolute;
@@ -1164,7 +1164,7 @@ dotlottie-wc {
 }
 
 
-/* Page france */
+
 .info__france-section{
   background-color: var(--color-blue-light);
 }
@@ -1186,7 +1186,7 @@ dotlottie-wc {
   height: 25rem;
 }
 
-/* CONTENEUR GAUCHE (Bulle + Mascotte) */
+
 .info__france__fig {
   display: flex;
   flex-direction: column;
@@ -1388,26 +1388,9 @@ dotlottie-wc {
 
 
 
-/* * {
-  box-sizing: border-box;
-}
-
-img,
-svg,
-dotlottie-wc {
-  max-width: 100%;
-  height: auto;
-  display: block;
-} */
-
-
-/* ===================== */
-/* ====== MOBILE ====== */
-/* ===================== */
-
 @media (max-width: 768px) {
 
-  /* TITRE ACCUEIL */
+
   .accueil__title {
     font-size: 3rem;
   }
@@ -1417,7 +1400,7 @@ dotlottie-wc {
     padding: 2rem;
   }
 
-  /* SECTIONS PLEIN ÉCRAN */
+  
   section,
   .info__touriste,
   .info__airbus,
@@ -1434,7 +1417,7 @@ dotlottie-wc {
     padding: 3rem 1rem;
   }
 
-  /* PASSAGE EN COLONNE */
+  
   .info__touriste,
   .info__airbus,
   .info__locaux,
@@ -1447,38 +1430,38 @@ dotlottie-wc {
     gap: 2rem;
   }
 
-  /* CONTENEURS FIG */
+
   [class$="__fig"] {
     align-items: center;
     margin: 0;
   }
 
-  /* IMAGES MASCOTTES */
+
   [class$="__img"] {
     width: 8rem;
     margin: 0 0 1.5rem 0;
   }
 
-  /* BULLES */
+
   [class$="__bulle"] {
     width: 100%;
     max-width: 100%;
     padding: 1.5rem;
   }
 
-  /* TEXTE */
+  
   [class$="__desc"] {
     font-size: 1.2rem;
     text-align: center;
   }
 
-  /* SUPPRESSION QUEUE DE BULLE */
+ 
   [class$="__bulle"]::before,
   [class$="__bulle"]::after {
     display: none;
   }
 
-  /* ANIMATIONS */
+ 
   .animation,
   .box-anim,
   .anim__feu,
