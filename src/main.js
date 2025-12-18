@@ -130,7 +130,7 @@ import { DotLottie } from "@lottiefiles/dotlottie-web";
 
 const anim1 = new DotLottie({
   canvas: document.querySelector("#animation__feu"),
-  src: "https://lottie.host/6375a0c4-ddd1-43e7-aef5-767956ae6cc4/TGDzHyypne.lottie",
+  src: "https://lottie.host/21317719-9ea7-4bb0-9eca-c18fb4f508d1/5g1pERuheT.lottie",
   autoplay: false,
   loop: false,
 });
@@ -150,7 +150,7 @@ anim1.addEventListener("load", () => {
 
 const anim2 = new DotLottie({
   canvas: document.querySelector("#animation__france__eco"),
-  src: "https://lottie.host/a502152b-2346-4547-9294-4e218495a0a0/Uifa6k6UCQ.lottie",
+  src: "https://lottie.host/8a45d72e-dff6-4318-a227-ea1a41a4166c/tb6zYgOjaH.lottie",
   autoplay: false,
   loop: false,
 });
@@ -170,7 +170,7 @@ anim2.addEventListener("load", () => {
 
 const anim3 = new DotLottie({
   canvas: document.querySelector("#animation__touriste_etranger"),
-  src: "https://lottie.host/7e5cb5c6-687e-44aa-8c9e-6df0ec4601a9/QoIjRqCuoZ.lottie",
+  src: "https://lottie.host/c3c1d41f-7010-40b1-837f-878c924007d4/vpIj0un82f.lottie",
   autoplay: false,
   loop: false,
 });
@@ -190,7 +190,7 @@ anim3.addEventListener("load", () => {
 
 const anim4 = new DotLottie({
   canvas: document.querySelector("#animation__billets"),
-  src: "https://lottie.host/2e40453f-e704-4eaa-bac8-d03eb9ac601b/eTfLULwctM.lottie",
+  src: "https://lottie.host/6a9628cf-f7d6-4a8b-907f-3407b0d24891/Tivtpo9Wx3.lottie",
   autoplay: false,
   loop: false,
 });
@@ -208,6 +208,24 @@ anim4.addEventListener("load", () => {
 });
 
 
+const anim5 = new DotLottie({
+  canvas: document.querySelector("#animation__info__airbus__fig"),
+  src: "https://lottie.host/e9e8a79b-fb77-49af-910e-412cc7ce03df/sKU1fIsQ3C.lottie",
+  autoplay: false,
+  loop: false,
+});
+
+anim5.addEventListener("load", () => {
+  ScrollTrigger.create({
+    trigger: ".info__airbus",
+    start: "top center",
+    end: "bottom center",
+    onEnter: () => anim5.play(),
+    onLeave: () => anim5.pause(),
+    onEnterBack: () => anim5.play(),
+    onLeaveBack: () => anim5.pause(),
+  });
+});
 
 
 // ANIMATION DU GRAPHIQUE SVG 2

@@ -222,6 +222,9 @@ dotlottie-wc {
 
 
 /* Page info tourisme +180% */
+.info__touriste-section{
+  background-color: var(--color-red);
+}
 
 .info__touriste {
   background-color: var(--color-red);
@@ -231,7 +234,6 @@ dotlottie-wc {
   justify-content: center;
   align-items: center;
 
-  gap: 3rem;
   width: 100vw;
   height: 100vh;
 }
@@ -309,6 +311,9 @@ dotlottie-wc {
 
 
 /* Page info airbus */
+.info__airbus-section{
+  background-color: var(--color-blue-light);
+}
 
 .info__airbus {
   background-color: var(--color-blue-light);
@@ -403,6 +408,9 @@ dotlottie-wc {
 
 
 /* Page info locaux */
+.info__locaux-section{
+  background-color: var(--color-pink);
+}
 
 .info__locaux {
   background-color: var(--color-pink);
@@ -513,6 +521,9 @@ dotlottie-wc {
 
 
 /* Page info ges */
+.info__ges-section{
+  background-color: var(--color-yellow-light);
+}
 
 .info__ges {
   background-color: var(--color-yellow-light);
@@ -599,6 +610,9 @@ dotlottie-wc {
 
 
 /* Page ges avion */
+.info__ges__avion-section{
+  background-color: var(--color-purple);
+}
 
 .info__ges__avion {
   background-color: var(--color-purple);
@@ -690,6 +704,9 @@ dotlottie-wc {
 
 
 /* Page ile */
+.info__ile-section{
+  background-color: var(--color-green);
+}
 
 .info__ile {
   background-color: var(--color-green);
@@ -776,6 +793,9 @@ dotlottie-wc {
 
 
 /* Page feu */
+.info__feu-section{
+  background-color: var(--color-blue-light);
+}
 
 .info__feu {
   background-color: var(--color-blue-light);
@@ -791,8 +811,8 @@ dotlottie-wc {
 }
 
 .anim__feu{
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
 }
 
 /* CONTENEUR GAUCHE (Bulle + Mascotte) */
@@ -867,6 +887,9 @@ dotlottie-wc {
 
 
 /* Page info ges */
+.info__rechauffement-section{
+  background-color: var(--color-pink);
+}
 
 .info__rechauffement {
   background-color: var(--color-pink);
@@ -954,6 +977,10 @@ dotlottie-wc {
 
 
 /* Page pandemie */
+.info__pandemie-section{
+  background-color: var(--color-red-light);
+}
+
 .info__pandemie {
   background-color: var(--color-red-light);
   display: flex;
@@ -1043,6 +1070,9 @@ dotlottie-wc {
 }
 
 /* Page eco */
+.presentation__eco-section{
+  background-color: var(--color-green-light);
+}
 
 .presentation__eco {
   background-color: var(--color-green-light);
@@ -1128,12 +1158,16 @@ dotlottie-wc {
 }
 
 .anim__billets{
-  width: 1000px;
-  height: 1000px;
+  width: 800px;
+  height: 800px;
 }
 
 
 /* Page france */
+.info__france-section{
+  background-color: var(--color-blue-light);
+}
+
 .info__france {
   background-color: var(--color-blue-light);
   display: flex;
@@ -1223,6 +1257,10 @@ dotlottie-wc {
 
 
 /* Page touriste etranger */
+
+.info__touriste_etranger_section{
+  background-color: var(--color-purple);
+}
 
 .info__touriste_etranger {
   background-color: var(--color-purple);
@@ -1315,4 +1353,33 @@ dotlottie-wc {
   
   border-top: 20px solid var(--color-purple); 
   border-bottom: none;
+}
+
+
+.chiffre{
+  font-family: var(--font-sans);
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--color-black);
+  font-style: italic;
+
+  margin: 0;
+}
+
+.animation{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.title{
+  margin:0;
+  padding: 5rem;
+  padding-bottom: 0;
+
+  font-family: var(--font-display);
+  color: var(--color-black);
+  font-size: 3rem;
 }
