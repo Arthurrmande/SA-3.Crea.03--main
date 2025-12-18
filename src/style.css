@@ -39,6 +39,10 @@ body {
 }
 
 /* Page Presentation */
+.presentation-section{
+  background-color: var(--color-green);
+}
+
 .presentation {
   background-color: var(--color-green);
   display: flex;
