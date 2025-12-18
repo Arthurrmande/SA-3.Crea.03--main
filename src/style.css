@@ -1384,3 +1384,108 @@ dotlottie-wc {
   color: var(--color-black);
   font-size: 3rem;
 }
+
+
+
+
+/* * {
+  box-sizing: border-box;
+}
+
+img,
+svg,
+dotlottie-wc {
+  max-width: 100%;
+  height: auto;
+  display: block;
+} */
+
+
+/* ===================== */
+/* ====== MOBILE ====== */
+/* ===================== */
+
+@media (max-width: 768px) {
+
+  /* TITRE ACCUEIL */
+  .accueil__title {
+    font-size: 3rem;
+  }
+
+  .title {
+    font-size: 2rem;
+    padding: 2rem;
+  }
+
+  /* SECTIONS PLEIN ÉCRAN */
+  section,
+  .info__touriste,
+  .info__airbus,
+  .info__locaux,
+  .info__ges,
+  .info__ges__avion,
+  .info__feu,
+  .info__france,
+  .info__pandemie,
+  .info__ile,
+  .info__touriste_etranger {
+    height: auto;
+    min-height: 100vh;
+    padding: 3rem 1rem;
+  }
+
+  /* PASSAGE EN COLONNE */
+  .info__touriste,
+  .info__airbus,
+  .info__locaux,
+  .info__ges,
+  .info__ges__avion,
+  .info__pandemie,
+  .info__france,
+  .info__touriste_etranger {
+    flex-direction: column !important;
+    gap: 2rem;
+  }
+
+  /* CONTENEURS FIG */
+  [class$="__fig"] {
+    align-items: center;
+    margin: 0;
+  }
+
+  /* IMAGES MASCOTTES */
+  [class$="__img"] {
+    width: 8rem;
+    margin: 0 0 1.5rem 0;
+  }
+
+  /* BULLES */
+  [class$="__bulle"] {
+    width: 100%;
+    max-width: 100%;
+    padding: 1.5rem;
+  }
+
+  /* TEXTE */
+  [class$="__desc"] {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+
+  /* SUPPRESSION QUEUE DE BULLE */
+  [class$="__bulle"]::before,
+  [class$="__bulle"]::after {
+    display: none;
+  }
+
+  /* ANIMATIONS */
+  .animation,
+  .box-anim,
+  .anim__feu,
+  .anim__billets,
+  .anim__france__eco,
+  .anim__touriste_etranger {
+    width: 100%;
+    max-width: 20rem;
+  }
+}
